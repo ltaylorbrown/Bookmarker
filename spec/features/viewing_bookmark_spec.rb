@@ -6,8 +6,9 @@ feature 'Viewing bookmarks' do
 end 
 
 feature 'viewing bookmarks' do 
-  scenario 'visit /bookmarks' do 
+  scenario 'can see bookmarks' do 
     visit ('/bookmarks')
-    expect(page).to have_content "Hello"
+    expect(page).to have_content "https://airtable.com/shrJMn1quurUpejHI/tblU9M74TCpg89oGC?mode=week"
+    expect(page).to have_content "https://github.com/makersacademy/course/blob/main/apprenticeship_module_outlines.md"
   end
 end 

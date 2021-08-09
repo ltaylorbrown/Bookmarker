@@ -11,7 +11,11 @@ class BookmarkManager < Sinatra::Base
   end
   
   get '/bookmarks' do
-    erb :bookmarks
+    @bookmarks = [
+      "https://airtable.com/shrJMn1quurUpejHI/tblU9M74TCpg89oGC?mode=week",
+      "https://github.com/makersacademy/course/blob/main/apprenticeship_module_outlines.md"
+    ]
+    erb :'bookmarks/index'
   end 
 
 
