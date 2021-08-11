@@ -14,9 +14,11 @@ client->user:"displays a list of bookmarks"
 
 <!-- To set up the database -->
 Connect to 'psql' and create 'bookmark_manager' database;
-
 CREATE DATABASE bookmark_manager;
+Connect to database and run the script in 'db/migrations' in order - create appropriate tables
 
+Connect to 'psql' and create 'bookmark_manager_test' database;
+CREATE DATABASE bookmark_manager_test;
 Connect to database and run the script in 'db/migrations' in order - create appropriate tables
 
 <!-- To run the Bookmark Manager app -->
